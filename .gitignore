@@ -37,4 +37,5 @@ Thumbs.db
 
 # Project specific
 db/
-sap-o2c-data/ # (Optional, ignore if data is large/proprietary)
+graph-service/sap-o2c-data/
+dataset/
