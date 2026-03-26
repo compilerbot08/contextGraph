@@ -15,7 +15,7 @@ import dagre from 'dagre';
 import * as d3 from 'd3-force';
 import { useTheme } from '../contexts/ThemeContext';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:4000/api';
+const API_URL = import.meta.env.VITE_API_URL;
 
 const nodeColors = {
   Customer: '#3b82f6',
