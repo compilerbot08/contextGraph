@@ -10,8 +10,8 @@ app.use(cors());
 app.use(express.json());
 
 const PORT = process.env.PORT || 4000;
-const GRAPH_SERVICE_URL = process.env.GRAPH_SERVICE_URL;
-const LLM_SERVICE_URL = process.env.LLM_SERVICE_URL;
+const GRAPH_SERVICE_URL = process.env.GRAPH_SERVICE_URL || 'http://localhost:5000';
+const LLM_SERVICE_URL = process.env.LLM_SERVICE_URL || 'http://localhost:8000';
 
 app.get('/health', (req, res) => res.json({ status: 'ok', service: 'api-gateway' }));
 
